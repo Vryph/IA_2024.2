@@ -7,10 +7,10 @@ public class main {
 
 	
 	
-	public static void main(String[] args) {
-		EntrarNaMinaECavarPorPepitas();
+	//public static void main(String[] args) {
+		//EntrarNaMinaECavarPorPepitas();
 
-	}
+	//}
 	
 	public static void EntrarNaMinaECavarPorPepitas() {
 		if(dia == 3) {System.out.println("Hoje é terceiro dia, último dia do universo, e o fim do programa.");}
