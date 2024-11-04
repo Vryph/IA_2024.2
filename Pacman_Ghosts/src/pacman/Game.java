@@ -46,7 +46,7 @@ public class Game {
   // stuff about this instance of the game
   private Display display;
 
-  private int moveTime = 300;
+  private int moveTime = 50;
 
   private List<GhostPlayer> ghostPlayers;
 
@@ -54,6 +54,10 @@ public class Game {
 
   private Move pacManMove;
 
+	public Move getPacManMove() {
+		return pacManMove;
+	}
+  
   private int lives;
 
   private int level;
@@ -983,6 +987,7 @@ public class Game {
     System.err.println("Time:   " + stats[2]);
   }
 }
+	
 
 //class PlayerThread extends Thread {
 //

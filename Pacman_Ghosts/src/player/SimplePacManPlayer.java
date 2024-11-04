@@ -57,7 +57,8 @@ public class SimplePacManPlayer implements PacManPlayer {
     
     //Utiliza uma fun��o "soft-max" para normalizar os valores:
     scores = scores.exp().normalize(); 
-    Move move = scores.sampleFromDistribution(random); 
+    Move move = scores.argmax();
+    //Move move = scores.sampleFromDistribution(random); 
     
     //Armazena o �ltimo movimento feito:
     lastMove = move; 
